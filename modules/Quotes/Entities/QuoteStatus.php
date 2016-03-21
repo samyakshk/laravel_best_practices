@@ -12,5 +12,8 @@ protected $table="quote_statuses";
 
 
     ];
-
+ public function itemshistory()
+    {
+        return $this->hasMany('Modules\Quotes\Entities\QuoteItemStatusHIstory');
+    }
 }

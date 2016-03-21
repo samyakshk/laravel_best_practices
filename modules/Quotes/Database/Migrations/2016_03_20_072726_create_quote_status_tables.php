@@ -14,7 +14,7 @@ class CreateQuoteStatusTables extends Migration {
     {
         Schema::create('quote_statuses', function(Blueprint $table)
         {
-            $table->increments('id');
+            $table->increments('id')->unsigned();
             $table->string('status_code',20);
             $table->string('status_name',50);
             $table->text('remarks')->nullable();
